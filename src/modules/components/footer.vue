@@ -30,7 +30,7 @@
                  </div>
             </div>
             <div class="credit">
-                 <span>© 2024 iPeopleX. All rights reserved.</span>
+                 <span class="t-desc">© 2024 iPeopleX. All rights reserved.</span>
             </div>
         </div>
     </div>
@@ -96,12 +96,6 @@ export default {
             display: flex;
             justify-content: center;
             align-items: flex-end;
-
-            span {
-                font-size: 13px;
-                line-height: 25px;
-                font-weight: 400;
-            }
         }
     }
 </style>

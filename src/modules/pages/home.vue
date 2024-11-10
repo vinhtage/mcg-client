@@ -5,9 +5,9 @@
                 <div class="frame">
                     <div class="content">
                         <div class="title">
-                            <span class="title-text">NỀN TẢNG QUẢN TRỊ NHÂN SỰ TOÀN DIỆN</span>
+                            <span class="t1">NỀN TẢNG QUẢN TRỊ NHÂN SỰ TOÀN DIỆN</span>
         
-                            <div class="desc">
+                            <div class="t1-desc mt-20">
                                 <span>Khám phá Giải pháp Nhân sự hoàn hảo Cho mọi Doanh nghiệp</span>
                             </div>
                         </div>
@@ -30,8 +30,8 @@
         <div class="section2">
             <div class="box-title flex-center column">
                 <div class="title flex-center column">
-                    <span class="note">HIỆU QUẢ VƯỢT TRỘI</span>
-                    <span class="title-text">Quản trị nhân sự toàn diện với iPeopleX</span> 
+                    <span class="t-note">HIỆU QUẢ VƯỢT TRỘI</span>
+                    <span class="t2">Quản trị nhân sự toàn diện với iPeopleX</span> 
                 </div>
                 <span class="desc flex-center">iPeopleX cung cấp giải pháp quản lý nhân sự tích hợp bao trọn vòng đời của nhân viên, từ tuyển dụng đến nghỉ việc. Hỗ trợ tối ưu hóa quy trình và nâng cao hiệu suất doanh nghiệp với 16 phân hệ chức năng chuyên sâu.</span> 
             </div>
@@ -40,7 +40,7 @@
                     <div class="content column">
                         <div class="svg" :innerHTML="mash.pathSvg">
                         </div>
-                        <span> {{ mash.title }} </span>
+                        <span class="t-icon"> {{ mash.title }} </span>
                     </div>
                     <div class="more row">
                         <span>Tìm hiểu thêm</span> 
@@ -67,8 +67,8 @@
         <div class="section3 flex-center">
             <img src="@/assets/mockup.png">
             <div class="box-content column">
-                <span class="note">TỐI ƯU HÓA</span>
-                <span class="title-text mb-24"> Đồng hành cùng sự phát triển của Doanh nghiệp </span>
+                <span class="t-note">TỐI ƯU HÓA</span>
+                <span class="t2 mb-24"> Đồng hành cùng sự phát triển của Doanh nghiệp </span>
                 <span class="desc mb-40">
                     <span>iPeopleX mang lại lợi ích toàn diện cho mọi cấp bậc trong tổ chức, tạo nền tảng vững chắc cho sự phát triển bền vững của doanh nghiệp.</span>
                 </span>
@@ -254,13 +254,6 @@ const mashGroup = ref([
 </script>
 
 <style lang="scss">
-.title-text {
-    font-size: 39px;
-    line-height: 60px;
-    font-weight: 700;
-    color: #000;
-}
-
 .home {
     width: 100%;
     background-image: url('../../assets/bg-home.png');
@@ -286,19 +279,6 @@ const mashGroup = ref([
     
                 .title {
                     padding-bottom: 20px;
-    
-                    .title-text {
-                        font-size: 55px;
-                        line-height: 67.05px;
-                        font-weight: 700;
-                        color: #FFF;
-                    }
-    
-                    .desc {
-                        font-size: 18px;
-                        line-height: 27.9px;
-                        margin-top: 20px;
-                    }
                 }
     
     
@@ -381,14 +361,7 @@ const mashGroup = ref([
         .title {
             width: 600px;
 
-            .note {
-                font-size: 17px;
-                line-height: 27.9px;
-                font-weight: 600;
-                color: #005A8C;
-            }
-
-            .title-text {
+            .t2 {
                 text-align: center;
             }
         }
@@ -431,10 +404,7 @@ const mashGroup = ref([
             .content {
                 gap: 17px;
 
-                span {
-                    font-size: 18px;
-                    line-height: 31px;
-                    font-weight: 600;
+                .t-icon {
                     max-width: 230px;
                     word-break: break-word;
                 }
@@ -535,13 +505,6 @@ const mashGroup = ref([
 
 .section3 {
     .box-content {
-        
-        .note {
-            font-size: 17px;
-            line-height: 27.9px;
-            font-weight: 600;
-            color: rgba(0, 90, 140, 1);
-        }
 
         .desc {
             color: rgba(0, 0, 0, 1);

@@ -1,11 +1,11 @@
 <template>
-    <div class="contact-box">
+    <div class="contact-box" v-if="isShowContactBox">
         <div class="align-full" style="height: 100%;">
             <div class="box-container">
                 <div class="box-input column">
-                    <span class="note mb-16">KẾT NỐI</span>
-                    <span class="title mb-10">Liên hệ với chúng tôi</span>
-                    <span class="desc mb-20">Chúng tôi luôn sẵn sàng hỗ trợ bạn!</span>
+                    <span class="t-note mb-16">KẾT NỐI</span>
+                    <span class="t2 mb-10">Liên hệ với chúng tôi</span>
+                    <span class="t-desc mb-20">Chúng tôi luôn sẵn sàng hỗ trợ bạn!</span>
                     <div class="form">
                         <div class="input-box">
                             <input type="text" placeholder="Tên doanh nghiệp">
@@ -52,7 +52,7 @@
                     </svg>
                 </div>
                 <span class="title">Email</span>
-                <span class="desc">Sẵn sàng tối ưu hóa quy trình nhân sự của bạn? Yêu cầu bản demo ngay hôm nay!</span>
+                <span class="t-desc">Sẵn sàng tối ưu hóa quy trình nhân sự của bạn? Yêu cầu bản demo ngay hôm nay!</span>
                 <span class="link">mcg@mcg.vn</span>
             </div>
             <div class="item column">
@@ -62,7 +62,7 @@
                     </svg>
                 </div>
                 <span class="title">Phone</span>
-                <span class="desc">Bạn cần hỗ trợ giải đáp thắc mắc? Liên hệ với chúng tôi bất cứ lúc nào để được hỗ trợ.</span>
+                <span class="t-desc">Bạn cần hỗ trợ giải đáp thắc mắc? Liên hệ với chúng tôi bất cứ lúc nào để được hỗ trợ.</span>
                 <span class="link">+84 97 567 4766</span>
             </div>
             <div class="item column">
@@ -73,7 +73,7 @@
                     </svg>
                 </div>
                 <span class="title">Office</span>
-                <span class="desc">Trực tiếp đến gặp chúng tôi để được tư vấn hoặc khám phá thêm các dịch vụ.</span>
+                <span class="t-desc">Trực tiếp đến gặp chúng tôi để được tư vấn hoặc khám phá thêm các dịch vụ.</span>
                 <span class="link">Tầng 10, 141 Bà Triệu, Hai Bà Trưng, Hà Nội, Việt Nam</span>
             </div>
         </div>
@@ -83,6 +83,12 @@
 <script>
 export default {
     name: 'Contact',
+    props: {
+        isShowContactBox: {
+            type: Boolean,
+            default: true
+        }
+    },
     components:{
         
     }
@@ -107,23 +113,8 @@ export default {
                 color: #fff;
                 width: 50%;
 
-                .note {
-                    font-size: 15px;
-                    font-weight: 600;
-                    line-height: 27.9px;
+                .t-note {
                     color: rgba(154, 235, 255, 1);
-                }
-
-                .title {
-                    font-size: 39px;
-                    font-weight: 700;
-                    line-height: 60px;
-                }
-
-                .desc {
-                    font-size: 13px;
-                    font-weight: 300;
-                    line-height: 25px;
                 }
 
                 .form {
@@ -209,10 +200,7 @@ export default {
                 color: #005A8C;
             }
 
-            .desc {
-                font-size: 13px;
-                font-weight: 400;
-                line-height: 25px;
+            .t-desc {
                 text-align: center;
                 width: 350px;
             }

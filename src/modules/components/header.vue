@@ -82,7 +82,7 @@ export default {
                 }
 
                 .router-link-active {
-                    color: #999999;
+                    font-weight: 700;
                 }
             }
         }

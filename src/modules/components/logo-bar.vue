@@ -2,7 +2,7 @@
     <div class="logo-bar">
         <div class="align-full">
             <div class="box column">
-                <div class="title column">
+                <div class="title column" v-if="isShowNum">
                     <span class="num">10.000+</span>
                     <span class="title-text">NGƯỜI ĐÃ TRẢI NGHIỆM PHẦN MỀM CỦA CHÚNG TÔI</span>
                 </div>
@@ -28,6 +28,12 @@
 <script>
 export default {
     name: 'LogoBar',
+    props: {
+        isShowNum: {
+            type: Boolean,
+            default: true
+        }
+    },
     components:{
         
     }
