@@ -47,7 +47,7 @@ export default {
 
 <style lang="scss">
     .footer {
-        padding-top: 50px !important;
+        padding-top: 20px !important;
         padding-bottom: 50px !important;
 
         .box-content {

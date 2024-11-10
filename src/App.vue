@@ -1,5 +1,5 @@
 <template>
-	<div id="app">
+	<div id="app" class="app">
 		<Header />
 		<router-view />
 		<Footer />
@@ -25,10 +25,17 @@ export default {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	font-family: "Montserrat", sans-serif;
+}
+
+.app {
+    font-family: "Montserrat", sans-serif !important;
 	font-size: 14px;
 	line-height: 19.5px;
 	font-weight: 500;
+
+	button {
+		font-family: "Montserrat", sans-serif !important;
+	}
 }
 
 .align-full {
@@ -57,6 +64,18 @@ export default {
 
 .pointer {
 	cursor: pointer;
+}
+
+.relative {
+	position: relative;
+}
+
+.absolute {
+	position: absolute;
+}
+
+.fixed {
+	position: fixed;
 }
 
 $spaces: 0, 2, 4, 6, 8, 10, 12, 16, 18, 20, 24, 28, 30, 32, 36, 40, 50, 60;

@@ -137,15 +137,21 @@
     </div>
     
     <Experience />
+    <LogoBar />
+    <Contact />
 </template>
 
 <script>
 import Experience from '../components/experience.vue'
+import LogoBar from '../components/logo-bar.vue'
+import Contact from '../components/contact.vue'
 
 export default {
     name: 'Home',
     components:{
-        Experience
+        Experience,
+        LogoBar,
+        Contact
     },
     data(){
         return {
@@ -249,9 +255,9 @@ const mashGroup = ref([
 
 <style lang="scss">
 .title-text {
-    font-size: 39px !important;
-    line-height: 60px !important;
-    font-weight: 700 !important;
+    font-size: 39px;
+    line-height: 60px;
+    font-weight: 700;
     color: #000;
 }
 
@@ -259,6 +265,7 @@ const mashGroup = ref([
     width: 100%;
     background-image: url('../../assets/bg-home.png');
     background-size: cover;
+    background-position: bottom;
     
     .section1 {
         height: 820px;
@@ -281,10 +288,10 @@ const mashGroup = ref([
                     padding-bottom: 20px;
     
                     .title-text {
-                        font-size: 55px !important;
-                        line-height: 67.05px !important;
-                        font-weight: 700 !important;
-                        color: #FFF !important;
+                        font-size: 55px;
+                        line-height: 67.05px;
+                        font-weight: 700;
+                        color: #FFF;
                     }
     
                     .desc {
@@ -304,6 +311,9 @@ const mashGroup = ref([
                         border-radius: 60px;
                         border: 1px solid #FFF;
                         cursor: pointer;
+                        font-size: 15px;
+                        line-height: 19.5px;
+                        font-weight: 500;
                     }
     
                     .btn-blue {
@@ -487,11 +497,14 @@ const mashGroup = ref([
         height: 160px;
         
         button {
-            padding: 20px 40px;
+            padding: 20px 30px;
             cursor: pointer;
             background-color: rgba(245, 245, 245, 1);
             color: rgba(142, 142, 147, 1);
             border: none;
+            font-size: 16px;
+            line-height: 19.5px;
+            font-weight: 500;
 
             &:hover {
                 background-color: rgba(142, 142, 147, 1);
